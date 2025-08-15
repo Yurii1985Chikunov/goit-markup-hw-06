@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-04</title>
+    <title>goit-markup-hw-06</title>
 
     <link
       rel="stylesheet"
@@ -53,11 +53,26 @@
             </li>
           </ul>
         </address>
+
+        <button class="mobile-menu-btn" type="button" data-menu-open>
+          <svg class="mobile-menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-solid-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu is-open" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close>Close</button>
+          <nav class="mobile-menu-nav">Navigation</nav>
+          <address>Address</address>
+          <div>Social</div>
+        </div>
       </div>
     </header>
 
     <main>
-      <section class="first-section">
+      <section class="first-section hidden">
         <div class="container">
           <h1 class="first-section-txt">
             Effective Solutions for Your Business
@@ -68,7 +83,7 @@
         </div>
       </section>
 
-      <section class="second-section">
+      <section class="second-section hidden">
         <div class="container">
           <h2 class="visually-hidden"></h2>
 
@@ -125,7 +140,7 @@
         </div>
       </section>
 
-      <section class="third-section">
+      <section class="third-section hidden">
         <div class="container">
           <h2 class="third-section-head">Our Team</h2>
           <ul class="third-section-list">
@@ -301,7 +316,7 @@
         </div>
       </section>
 
-      <section class="fourth-section">
+      <section class="fourth-section hidden">
         <div class="container">
           <h2 class="fourth-section-head">Our Portfolio</h2>
           <ul class="fourth-section-list">
@@ -426,7 +441,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer hidden">
       <div class="footer-container">
         <div class="footer-logo-container">
           <a class="logo footer-logo" href="./index.html"
@@ -492,7 +507,7 @@
       </div>
     </footer>
 
-    <div class="modal-overlay" data-modal>
+    <div class="modal-overlay hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="icon-close" width="8" height="8">
