@@ -369,12 +369,12 @@ button {
 
 .second-section-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 72px;
 }
 
 .second-section-item {
-  max-width: 288px;
+  width: 100%;
 }
 
 .second-section-name {
@@ -397,8 +397,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .second-section-list {
-    display: flex;
-    flex-direction: row;
+    justify-content: center;
     gap: 24px;
   }
 
@@ -455,7 +454,6 @@ button {
 .third-section-head {
   margin-bottom: 72px;
   text-transform: capitalize;
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -465,9 +463,9 @@ button {
 
 .third-section-list {
   display: flex;
-  flex-direction: column;
-  gap: 72px;
-  max-width: 264px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
 }
 
 .img-user {
@@ -480,7 +478,7 @@ button {
 
 .third-section-item {
   overflow: hidden;
-  width: 100%;
+  width: 264px;
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -544,8 +542,6 @@ button {
 
 @media screen and (min-width: 768px) {
   .third-section-list {
-    display: flex;
-    flex-direction: row;
     gap: 72px;
   }
 }
@@ -557,7 +553,6 @@ button {
   }
 
   .third-section-list {
-    display: flex;
     gap: 24px;
   }
 
