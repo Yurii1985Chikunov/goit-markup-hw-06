@@ -63,10 +63,70 @@
 
       <div class="mobile-menu" data-menu>
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close" data-menu-close>Close</button>
-          <nav class="mobile-menu-nav">Navigation</nav>
-          <address>Address</address>
-          <div>Social</div>
+          <button class="modal-close" data-menu-close>
+            <svg class="icon-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mb-nav-list">
+              <li class="mb-nav-item">
+                <a class="nav-link nav-pos" href="./index.html">Studio</a>
+              </li>
+              <li class="mb-nav-item">
+                <a class="nav-link" href="">Portfolio</a>
+              </li>
+              <li class="mb-nav-item">
+                <a class="nav-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-menu-address">
+            <ul class="mb-address-list">
+              <li class="mb-address-item">
+                <a class="address-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mb-address-item">
+                <a class="address-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="mobile-menu-contacts">
+            <ul class="network-list">
+              <li class="network-item">
+                <a class="network-link" href="instagram">
+                  <svg class="link-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="network-item">
+                <a class="network-link" href="twitter">
+                  <svg class="link-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="network-item">
+                <a class="network-link" href="facebook">
+                  <svg class="link-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="network-item">
+                <a class="network-link" href="linkedin">
+                  <svg class="link-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -145,35 +205,16 @@
           <h2 class="third-section-head">Our Team</h2>
           <ul class="third-section-list">
             <li class="third-section-item">
-              <picture>
-                <source
-                  media="(min-width: 1158px)"
-                  srcset="
-                    ./images/desk/team-desk-1-min.jpg    1x,
-                    ./images/desk/team-desk-1@2x-min.jpg 2x
-                  "
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/tab/team-tab-1-min.jpg    1x,
-                    ./images/tab/team-tab-1@2x-min.jpg 2x
-                  "
-                />
-                <source
-                  media="(max-width: 767px)"
-                  srcset="
-                    ./images/mob/team-mob-1-min.jpg    1x,
-                    ./images/mob/team-mob-1@2x-min.jpg 2x
-                  "
-                />
-                <img
-                  class="img-user"
-                  src="./images/desk/team-desk-1-min.jpg"
-                  alt="mark guerrero"
-                  width="264"
-                />
-              </picture>
+              <img
+                class="img-user"
+                srcset="
+                  ./images/team-1-min.jpg    1x,
+                  ./images/team-1@2x-min.jpg 2x
+                "
+                src="./images/team-1-min.jpg"
+                alt="mark guerrero"
+                width="264"
+              />
 
               <div class="user-name">
                 <h3 class="third-section-name">Mark Guerrero</h3>
@@ -211,35 +252,16 @@
               </div>
             </li>
             <li class="third-section-item">
-              <picture>
-                <source
-                  media="(min-width: 1158px)"
-                  srcset="
-                    ./images/desk/team-desk-2-min.jpg    1x,
-                    ./images/desk/team-desk-2@2x-min.jpg 2x
-                  "
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/tab/team-tab-2-min.jpg    1x,
-                    ./images/tab/team-tab-2@2x-min.jpg 2x
-                  "
-                />
-                <source
-                  media="(max-width: 767px)"
-                  srcset="
-                    ./images/mob/team-mob-2-min.jpg    1x,
-                    ./images/mob/team-mob-2@2x-min.jpg 2x
-                  "
-                />
-                <img
-                  class="img-user"
-                  src="./images/desk/team-desk-2-min.jpgg"
-                  alt="tom ford"
-                  width="264"
-                />
-              </picture>
+              <img
+                class="img-user"
+                srcset="
+                  ./images/team-2-min.jpg    1x,
+                  ./images/team-2@2x-min.jpg 2x
+                "
+                src="./images/team-2-min.jpg"
+                alt="tom ford"
+                width="264"
+              />
 
               <div class="user-name">
                 <h3 class="third-section-name">Tom Ford</h3>
@@ -277,35 +299,16 @@
               </div>
             </li>
             <li class="third-section-item">
-              <picture>
-                <source
-                  media="(min-width: 1158px)"
-                  srcset="
-                    ./images/desk/team-desk-3-min.jpg    1x,
-                    ./images/desk/team-desk-3@2x-min.jpg 2x
-                  "
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/tab/team-tab-3-min.jpg    1x,
-                    ./images/tab/team-tab-3@2x-min.jpg 2x
-                  "
-                />
-                <source
-                  media="(max-width: 767px)"
-                  srcset="
-                    ./images/mob/team-mob-3-min.jpg    1x,
-                    ./images/mob/team-mob-3@2x-min.jpg 2x
-                  "
-                />
-                <img
-                  class="img-user"
-                  src="./images/desk/team-desk-3-min.jpg"
-                  alt="camila garcia"
-                  width="264"
-                />
-              </picture>
+              <img
+                class="img-user"
+                srcset="
+                  ./images/team-3-min.jpg    1x,
+                  ./images/team-3@2x-min.jpg 2x
+                "
+                src="./images/team-3-min.jpg"
+                alt="camila garcia"
+                width="264"
+              />
 
               <div class="user-name">
                 <h3 class="third-section-name">Camila Garcia</h3>
@@ -343,35 +346,16 @@
               </div>
             </li>
             <li class="third-section-item">
-              <picture>
-                <source
-                  media="(min-width: 1158px)"
-                  srcset="
-                    ./images/desk/team-desk-4-min.jpg    1x,
-                    ./images/desk/team-desk-4@2x-min.jpg 2x
-                  "
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/tab/team-tab-4-min.jpg    1x,
-                    ./images/tab/team-tab-4@2x-min.jpg 2x
-                  "
-                />
-                <source
-                  media="(max-width: 767px)"
-                  srcset="
-                    ./images/mob/team-mob-4-min.jpg    1x,
-                    ./images/mob/team-mob-4@2x-min.jpg 2x
-                  "
-                />
-                <img
-                  class="img-user"
-                  src="./images/desk/team-desk-4-min.jpg"
-                  alt="daniel wilson"
-                  width="264"
-                />
-              </picture>
+              <img
+                class="img-user"
+                srcset="
+                  ./images/team-4-min.jpg    1x,
+                  ./images/team-4@2x-min.jpg 2x
+                "
+                src="./images/team-4-min.jpg "
+                alt="daniel wilson"
+                width="264"
+              />
 
               <div class="user-name">
                 <h3 class="third-section-name">Daniel Wilson</h3>
